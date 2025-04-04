@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ config.title }}
+{% endblock title %}
+
+{% block header_menu %}
+{{ menu_macros::menu_for(config=config, current_item="") }}
+{% endblock header_menu %}
+
+{% block content %}
+<div class="post">
+  <h1 class="post-title">{% block heading %}Welcome{% endblock heading %}</h1>
+  <p>{% block message %}under_construction.gif{% endblock message %}</p>
+</div>
+{% endblock content %}

@@ -15,10 +15,6 @@
     max-width: 660px;
   }
 
-  &:not(:last-of-type) {
-    border-bottom: 1px solid var(--border-color);
-  }
-
   %meta {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -36,12 +32,9 @@
   }
 
   &-title {
-    --border: 2px dashed var(--accent);
     position: relative;
     color: var(--accent);
     margin: 0 0 15px;
-    padding-bottom: 15px;
-    border-bottom: var(--border);
     font-weight: normal;
 
     a {
@@ -76,7 +69,6 @@
   }
 
   &-cover {
-    border: 20px solid var(--accent);
     background: transparent;
     margin: 40px 0;
     padding: 20px;
@@ -126,10 +118,10 @@
   }
 
   .post-list-title {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .post-tag {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
